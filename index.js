@@ -1,9 +1,9 @@
-const history= [];
+const history = [];
 
 function lotteryResponseLogic() {
     let randomNum = randomNumLogic();
-    const userInput = Number(document.getElementById('user_input').value)
-    let responseElement = document.getElementById("response")
+    let userInput = Number(Interactor.getHTML('user_input').value)
+    let responseElement = Interactor.getHTML("response")
     let errorMessage = "Por favor introduce un número válido.";
     let succesMessage = `Correcte, el teu número ${userInput} coincideix amb el de la loteria (${randomNum})!`
     let tryAgainMessage = `El teu número ${userInput} no coincideix amb el de la loteria ${randomNum}, torna a intentar-ho!`
@@ -23,11 +23,3 @@ function lotteryResponseLogic() {
 
 }
 
-function seeHistory(){
-    let responseElement = document.getElementById("response")
-    if (history.length === 0){
-        responseElement.innerHTML = "Aún no hay ningún intento registrado."
-    } else {
-    return responseElement.innerHTML = history.join('<br>')
-    }
-}
