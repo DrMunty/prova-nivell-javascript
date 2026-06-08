@@ -1,8 +1,3 @@
-
-function randomNumLogic() {
-   return Math.floor(Math.random() * 10) + 1;
-}
-
 const history= [];
 
 function lotteryResponseLogic() {
