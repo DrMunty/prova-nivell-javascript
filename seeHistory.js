@@ -1,8 +1,8 @@
-function seeHistory(){
-    let responseElement = document.getElementById("response")
+function seeHistory(history){
+    const responseElement = Interactor.getHTML("response")
     if (history.length === 0){
-        responseElement.innerHTML = "Aún no hay ningún intento registrado."
+        return Interactor.printMessage(Messages.emptyArrayMessage(), responseElement);
     } else {
-    return responseElement.innerHTML = history.join('<br>')
+        return Interactor.printMessage(history.join('<br>'), responseElement);
     }
 }
