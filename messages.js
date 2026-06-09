@@ -9,8 +9,8 @@ class Messages {
     return `Correcte, el teu número ${userInput} coincideix amb el de la loteria (${randomNum})!`;
   }
 
-  static tryAgainMessage() {
-    return `El teu número ${userInput, randomNum} no coincideix amb el de la loteria ${randomNum}, torna a intentar-ho!`;
+  static tryAgainMessage(userInput, randomNum) {
+    return `El teu número ${userInput} no coincideix amb el de la loteria ${randomNum}, torna a intentar-ho!`;
   }
 
   static emptyArrayMessage() {
