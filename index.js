@@ -9,4 +9,5 @@ Interactor.getHTML("play_lottery").addEventListener("click", () => {
 });
 
 Interactor.getHTML("see_attempts").addEventListener("click", () => {
-  seeHistory(history)});
+  seeHistory(history);
+});
