@@ -1,6 +1,6 @@
 import { Interactor } from "../types/DOM-Interactor";
 import { Messages } from "../types/Messages";
-import { randomNumLogic } from "./Random-Num-Logic";
+import { randomNumLogic } from "../scripts/Random-Num-Logic";
 
 
 export function lotteryResponseLogic(history) {

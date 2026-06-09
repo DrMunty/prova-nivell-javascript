@@ -2,7 +2,7 @@ export class Messages {
   constructor (){}
 
   static errorMessage() {
-    return `Por favor introduce un número válido.`;
+    return `Siusplau, introdueix un número vàlid.`;
   }
 
   static successMessage(userInput, randomNum) {

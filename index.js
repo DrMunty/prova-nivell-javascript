@@ -1,12 +1,12 @@
 import { Interactor } from "./src/types/DOM-Interactor";
 import { seeHistory } from "./src/scripts/Attempts-Array";
-import { lotteryResponseLogic} from "./src/scripts/Random-Num-Logic";
+import { lotteryResponseLogic } from "./src/scripts/Lottery-Logic";
 
 const history = [];
 
-Interactor.getHTML("lotteryResponseLogic").addEventListener("click", () => {
+Interactor.getHTML("play_lottery").addEventListener("click", () => {
   lotteryResponseLogic(history); 
 });
 
-Interactor.getHTML("seeHistory").addEventListener("click", () => {
+Interactor.getHTML("see_attempts").addEventListener("click", () => {
   seeHistory(history)});
