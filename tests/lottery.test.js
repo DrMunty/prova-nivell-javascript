@@ -31,9 +31,23 @@ describe('Testing funció checkLotteryResult', () => {
 });
 
 describe('Testing funció checkLotteryResult', () => {
-    test(`L'usuari ingressa el número 7 i el sistema genera el mateix número aleatori`, () => {
+    test(`L'usuari ingressa un string i la app ha de mostrar un missatge d'error`, () => {
 
         const userInput = "Hola";
+        const randomNum = 5;
+
+        const result = checkLotteryResult(userInput, randomNum);
+
+        const message = Messages.errorMessage()
+
+        expect(result).toBe(message);
+    });
+});
+
+describe('Testing funció checkLotteryResult', () => {
+    test(`L'usuari ingressa el número 20 i la app ha de mostrar un missatge d'error`, () => {
+
+        const userInput = 20;
         const randomNum = 5;
 
         const result = checkLotteryResult(userInput, randomNum);
