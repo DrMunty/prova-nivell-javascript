@@ -2,6 +2,7 @@ import { history } from "../types/Attempts-array.js";
 import { Interactor } from "../types/DOM-Interactor.js";
 import { Messages } from "../types/Messages.js";
 import { randomNumLogic } from "../scripts/Random-Num-Logic.js";
+import { checkLotteryResult } from "./Lottery-Logic.js";
 
 export function lotteryResponseLogic() {
   const userInput = Number(Interactor.getHTML("user_input").value);
