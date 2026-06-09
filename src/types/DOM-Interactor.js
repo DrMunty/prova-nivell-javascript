@@ -1,4 +1,4 @@
-class Interactor {
+export class Interactor {
     constructor(){}
 
     static getHTML(id) {return document.getElementById(id)}
