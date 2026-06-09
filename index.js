@@ -1,6 +1,6 @@
 import { Interactor } from "./src/types/DOM-Interactor";
 import { seeHistory } from "./src/scripts/See-attempts";
-import { lotteryResponseLogic } from "./src/scripts/Lottery-Logic";
+import { lotteryResponseLogic } from "./src/scripts/Lottery-Response";
 
 Interactor.getHTML("play_lottery").addEventListener("click", () => {
   lotteryResponseLogic(); 
