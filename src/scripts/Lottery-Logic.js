@@ -1,9 +1,10 @@
+import { history } from "../types/Attempts-array";
 import { Interactor } from "../types/DOM-Interactor";
 import { Messages } from "../types/Messages";
 import { randomNumLogic } from "../scripts/Random-Num-Logic";
 
 
-export function lotteryResponseLogic(history) {
+export function lotteryResponseLogic() {
   const userInput = Number(Interactor.getHTML("user_input").value);
   const responseElement = Interactor.getHTML("response");
 
