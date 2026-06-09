@@ -7,6 +7,6 @@ export function seeHistory(){
     if (history.length === 0){
         return Interactor.printMessage(Messages.emptyArrayMessage(), responseElement);
     } else {
-        return Interactor.printMessage(history.join('<br>'), responseElement);
+        return Interactor.printMessage(`<ol><li>${history.join('</li><li>')}</li></ol>`, responseElement);
     }
 }
