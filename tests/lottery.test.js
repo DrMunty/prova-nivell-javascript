@@ -29,3 +29,17 @@ describe('Testing funció checkLotteryResult', () => {
         expect(result).toBe(message);
     });
 });
+
+describe('Testing funció checkLotteryResult', () => {
+    test(`L'usuari ingressa el número 7 i el sistema genera el mateix número aleatori`, () => {
+
+        const userInput = "Hola";
+        const randomNum = 5;
+
+        const result = checkLotteryResult(userInput, randomNum);
+
+        const message = Messages.errorMessage()
+
+        expect(result).toBe(message);
+    });
+});
