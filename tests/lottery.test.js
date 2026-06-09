@@ -1,10 +1,4 @@
-/**
- * @jest-environment jsdom
- */
-
 import { describe, test, expect } from 'vitest';
-import { Interactor } from '../src/types/DOM-Interactor';
-import { Messages } from '../src/types/Messages';
 import { lotteryResponseLogic } from '../src/scripts/Lottery-Logic';
 
 describe('Testing funció lotteryResponseLogic', () => {
