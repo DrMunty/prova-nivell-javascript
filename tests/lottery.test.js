@@ -57,3 +57,33 @@ describe('Testing funció checkLotteryResult', () => {
         expect(result).toBe(message);
     });
 });
+
+describe('Testing funció checkLotteryResult', () => {
+    test(`L'usuari ingressa el número 3 i el número 8 de forma seqüencial, l'historial ha de mostrar el missatge de les dues jugades`, () => {
+
+      const history = [];
+      
+      const userInput1 = 3;
+      const randomNum1 = 5;
+
+      const result1 = checkLotteryResult(userInput1, randomNum1);
+
+      history.push(result1);
+
+      const message1 = Messages.tryAgainMessage(userInput1, randomNum1);
+
+      expect(history[0]).toBe(message1);
+      
+      const userInput2 = 8;
+      const randomNum2 = 8;
+      
+      const result2 = checkLotteryResult(userInput2, randomNum2);
+
+      history.push(result2);
+    
+      const message2 = Messages.successMessage(userInput2, randomNum2);
+      expect(history[1]).toBe(message2);
+          
+      expect(history.length).toBe(2);
+    });
+});
